@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.section {
+  display: flex;
+}
+.main {
+  padding: 28px 12px;
+  width: 100%;
+  height: 100%;
+}

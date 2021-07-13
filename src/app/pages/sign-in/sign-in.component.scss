@@ -1,0 +1,37 @@
+.signin {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #f00;
+    width: 2px;
+    height: 360px;
+    left: calc(50% - 1px);
+    border-radius: 2px;
+    top: calc(50% - 180px);
+    background: #41b980;
+  }
+  &__left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper {
+      min-width: 200px;
+      max-width: 70%;
+    }
+    &__text {
+      font-size: 16px;
+      margin-top: 12px;
+      color: #374151;
+    }
+  }
+  &__right {
+    width: 50%;
+  }
+}
