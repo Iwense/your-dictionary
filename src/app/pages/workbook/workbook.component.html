@@ -47,6 +47,7 @@
       <ng-container *ngIf="!!wordsList.length; else noList">
         <div class="list__item" *ngFor="let item of wordsList">
           {{ item.engWord }} - {{ item.translateWord }}
+          <div class="list__item__close" (click)="closeItem(item.id)">&#10005;</div>
         </div>
       </ng-container>
     </div>

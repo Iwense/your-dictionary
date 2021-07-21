@@ -7,9 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-  private routes: Router
-  constructor(routes: Router) {
-    this.routes = routes;
+  constructor(private routes: Router) {
    }
 
   enter(){

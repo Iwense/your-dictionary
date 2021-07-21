@@ -8,6 +8,11 @@ interface IWord {
 }
 
 
+const initial: IWord[] = [
+  {id: 1, engWord: 'Hello', translateWord: 'Привет'}
+]
+
+
 @Component({
   selector: 'app-workbook',
   templateUrl: './workbook.component.html',
@@ -18,7 +23,7 @@ export class WorkbookComponent implements OnInit {
   wordsList: Array<IWord> = []
 
   constructor(private post: PostDataService) { 
-    
+    this.wordsList = initial
   }
 
   addWord(){
@@ -35,6 +40,11 @@ export class WorkbookComponent implements OnInit {
       }
       this.newWord = ''
     })
+  }
+
+  closeItem(id:number){
+    const newWordList = this.wordsList.filter((item: IWord) => item.id !== id)
+    this.wordsList = newWordList 
   }
 
 

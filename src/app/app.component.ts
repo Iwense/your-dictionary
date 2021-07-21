@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private user = false
+  private user = true
 
   constructor(router: Router){
     if (this.user){

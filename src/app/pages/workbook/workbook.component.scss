@@ -13,5 +13,23 @@
     background-color: rgb(243, 243, 243);
     border-radius: 4px;
     padding: 8px 12px;
+    &__close{
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center; 
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: rgb(173, 173, 173);
+      color: #fff;
+      padding: 8px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover{
+        background: rgb(143, 143, 143);
+      }
+    }
   }
 }
